@@ -1,11 +1,31 @@
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import Post from '../components/blog/Post'
 
 const Home = ({posts}) => (
   <div>
-    <Head>
-      <title>Home | {process.env.SITE_NAME} </title>
-    </Head>
+    <NextSeo
+      title="Bienvenido a EDblog"
+      description="EDblog es una creacion del curso de Next en EDteam"
+      openGraph={{
+        url: "https://ed.team",
+        title: "Bienvenido a EDblog",
+        description: "EDblog es una creacion del curso de Next en EDteam",
+        images: [
+          {
+            url: "https://ed.team/images/algo.jpg",
+            width: 1280,
+            height: 720,
+            alt: "Foto de perfil de EDteam"
+          }
+        ],
+        site_name: "EDblog"
+      }}
+      twitter={{
+        handle: "@edteamlat",
+        site: "@edteamlat",
+        cardType: "summary_large_image"
+      }}
+    />
     
     <div>
       <h1>{process.env.SITE_NAME} </h1>

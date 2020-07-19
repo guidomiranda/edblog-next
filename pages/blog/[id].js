@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Coments from '../../components/blog/Comments'
+import Comments from '../../components/blog/Comments'
 
 const PostBlog = ({ post }) => (
     <div>
@@ -14,7 +14,7 @@ const PostBlog = ({ post }) => (
         </div>
       </main>
       
-      <Comments />
+      <Comments id={post.id} />
     
     </div>
     
