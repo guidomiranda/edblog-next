@@ -13,10 +13,9 @@ const Header = () => (
             </a>
           </Link> 
         </div>
-        <div className="s-grid-1 lg-cols-3 s-cross-center s-main-end header-links">
+        
           <MainMenu /> 
-          <div className="main-menu-toggle to-l" id="main-menu-toggle"></div>
-        </div>
+
       </div>
     </header> 
    

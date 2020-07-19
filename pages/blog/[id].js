@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Coments from '../../components/blog/Comments'
 
 const PostBlog = ({ post }) => (
     <div>
@@ -12,7 +13,11 @@ const PostBlog = ({ post }) => (
           <p>{post.body}</p>
         </div>
       </main>
+      
+      <Comments />
+    
     </div>
+    
   )
   
   PostBlog.getInitialProps = async function (context) {
