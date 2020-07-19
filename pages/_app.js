@@ -1,11 +1,14 @@
 import Header from "../components/sections/Header"
+import "../styles/style.scss"
 
 function App({Component, pageProps}) {
     return (
-        <>
-            <Header />
+        <>   
+                <Header />
+            
             <Component {...pageProps} />
         </>
+        
     )
 }
 
