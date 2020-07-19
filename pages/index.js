@@ -35,6 +35,7 @@ const Home = ({posts}) => (
         }
       </div>
     </div>
+    <span>© 2020 gcompy software</span>
   </div>
 )
 
